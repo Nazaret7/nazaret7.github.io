@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="En esta página podrás encontrar todas las facilidades para poder viajar a Mordor y contactar con nosotros para poder organizártelo">
+    <meta name="author" content="">
+
+    <title>Viaja a Mordor | Contacta con nosotros.</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="brand">Viaja a Mordor</div>
+    <div class="address-bar">Mordor, Ciudad de Vacaciones | Beverly Hills, CA 90210</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Viaja a Mordor</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav header-menu">
+                    <li>
+                        <a accesskey="h" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a accesskey="p" href="./photos.html">Fotos</a>
+                    </li>
+                    <li>
+                        <a accesskey="s" href="./music.html">Música</a>
+                    </li>
+                    <li>
+                        <a accesskey="v" href="./videos.html">Vídeos</a>
+                    </li>
+                    <li>
+                        <a accesskey="m" href="./moreMordor.html">Conoce Mordor</a>
+                    </li>
+                    <li>
+                        <a accesskey="c" href="./contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <h1 class="brand-name text-center">Mordor</h1>
+                    <hr class="tagline-divider">
+                    <h2 class="intro-text text-center">Manda tu
+                        <strong>postal</strong>
+                    </h2>
+                    <hr>
+                    <div class="container postales">
+                        <div class="row">
+                            <div class="col-md-6 postal">
+                                <img src="../assets/img/photo1.jpg" alt="postal_1"/>
+                            </div>
+                            <div class="col-md-6 postal">
+                                <img src="../assets/img/photo2.jpg" alt="postal_2"/>
+                            </div>
+                        </div>
+                    </div>
+                    <main id="main" >
+                        <form role="form" action="../admin/postal.php" method="post">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label for ="name">Nombre</label>
+                                    <input id="name" type="text" class="form-control" name="name" value="">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="email">Dirección de correo</label>
+                                    <input id="email" type="email" class="form-control" name="email" value="">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="phone">Número de teléfono</label>
+                                    <input id="phone" type="tel" class="form-control" name="phone" value="">
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-lg-12">
+                                    <label for="message">Mensaje</label>
+                                    <textarea id="message" class="form-control" rows="6" name="message" value=""></textarea>
+                                </div>
+                                <input type="hidden" name="postal" class="form-control postal_saved">
+                                <div class="form-group col-lg-12">
+                                    <button type="submit" class="btn btn-default">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h5>Contacto:</h5>
+                    <ul>
+                        <li><a href="mailto:mordor@mordor.com?Subject=Vacaciones" target="_top">mordor@mordor.com</a></li>
+                        <li>+34 666 666 666</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <img alt="Facebook" class="footer-img" src="../assets/img/fb_icon.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../assets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+</body>
+
+</html>
